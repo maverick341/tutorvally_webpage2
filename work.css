@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* all type */
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+.btn{
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    background: transparent;
+    color: #1088b8;
+    border: .2rem solid #1088b8;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background: #1088b8;
+    color: #fff;
+}
+
+
+/* Navbar styling */
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(./images/man.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 7, 17, 0.788);
+    margin: auto;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 3.5rem;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-weight: 600;
+}
+.logo span{
+    color: #1088b8;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 2rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    height: 0.2rem;
+    width: 0;
+    background: #1088b8;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.4s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+
+/* frontpage */
+
+
+.content{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 7rem;
+    font-weight: 600;
+    text-align: center;
+}
+.main span{
+    color: #1088b8;
+}
+
+/* social media  */
+
+.social{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-26.1rem, 0);
+}
+.social a{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem;
+    padding: 2rem;
+    width: 30rem;
+    text-align: right;
+    border-radius: 5rem;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+    transition-property: transform;;
+}
+.social a:hover{
+    transform: translate(9rem, 0);
+}
+.social i{
+    margin-left: 1rem;
+    font-size: 2rem;
+    width: 3rem;
+    height: 2rem;
+}
+.social a:nth-child(1) i{
+    color: transparent;
+    background: linear-gradient(45deg, #4885ed, #db3236,#3cba54);
+    -webkit-background-clip: text;
+}
+.social a:nth-child(2) i{
+    color: transparent;
+    background: linear-gradient(45deg, #8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b, #4c68d7);
+    -webkit-background-clip: text;
+}
+.social a:nth-child(3) i{
+    color: #0e76a8;
+}
+.social a:nth-child(4) i{
+    color: #4267B2;
+}
+.social a:nth-child(5) i{
+    color: #1DA1F2;
+}
+
+/* scroll button  */
+
+.scroll-up-btn{
+    position: fixed;
+    height: 30px;
+    width: 25px;
+    background: #1088b8;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    /* opacity: 0; */
+    /* pointer-events: none; */
+    transition: all 0.3s ease;
+}
+.menu-btn{
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+/* About us */
+
+.about{
+    width: 100%;
+    padding: 7rem 0;
+    background: rgb(1, 5, 19);
+}
+.about img{
+    height: auto;
+    width: 31rem;
+}
+.about-text{
+    width: 55rem;
+}
+.menu{
+    /* width: 113rem; */
+    /* max-width: 100rem;
+    margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;    
+}
+.about-text h1 span{
+    color: #1088b8;
+}
+.about-text p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* services section  */
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./images/services.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container h1{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+.container p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+}
+.services{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+.service{
+    border: 0.3rem solid #076286;
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+    margin: 0 3.4rem;
+    transition: all 0.3s ease;
+}
+.service:hover{
+    background: #076286;
+}
+.service h4{
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2.5rem;
+}
+
+
+/* teams section  */
+
+section{
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background: rgb(1, 5, 19);
+}
+.container1 h1{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    padding-top: 7rem;
+    color: #fff;
+}
+.main1{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 5rem;
+
+}
+.card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    /* border: 1px solid #042b50; */
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+.card1 img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 3px solid #0e7be0; */
+    
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card1 img:hover{
+    box-shadow:  0rem 0rem 1.5rem 0rem #146bc2;
+}
+.contentBx h4{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+.contentBx h5{
+    font-size: 1.3rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.sci a{
+    color: #fff;
+    margin-top: 6rem;
+    padding: 1rem 0.8rem;
+    font-size: 1.4rem;
+}
+.sci a i{
+    padding: 1rem 0rem;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+.sci a i:hover{
+    background: #146bc2;
+}
+
+
+/* Contact section  */
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 5rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+.content2{
+    max-width: 80rem;
+    text-align: center;
+}
+.content2 h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    margin-bottom: 5rem;
+}
+.content2 h2 span{
+    color: #0b83b3;
+}
+.content2 p{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.box2{
+    position: relative;
+    padding: 2rem 0;
+    display: flex;
+}
+.icon2{
+    min-width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2.2rem;
+}
+.text2{
+    display: flex;
+    margin-left: 2rem;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.text2 h3{
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 300;
+    color: #0b83b3;
+    padding: 0.8rem 0;
+}
+.text2 p{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1rem;
+}
+.contactform{
+    width: 40%;
+    padding: 4rem;
+    background: #0b0122;
+}
+.contactform h2{
+    font-size: 3rem;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500; 
+    margin-bottom: 2.5rem;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.inputbox input,
+.inputbox textarea{
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid #0b83b3;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    pointer-events: none;
+    transition: 0.4s;
+    color: #777;
+}
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox textarea:valid ~ span{
+    color: #0b83b3;
+    font-size: 1.2rem;
+    transform: translateY(-2rem);
+}
+.inputbox input[type="submit"]{
+    width: 10rem;
+    font-weight: 500;
+    border: none;
+    color: #126686;
+    border: 0.2rem solid #126686;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.inputbox input[type="submit"]:hover{
+    background: #126686;
+    color: #fff;
+}
+
+/* Footer style  */
+
+footer{
+    background: rgb(5, 1, 24);
+    padding: 1.7rem 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+footer span a{
+    color: #1088b8;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
